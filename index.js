@@ -47,6 +47,7 @@ for(let i = 0; i < allRoutes.length; i++) {
 }
 
 // Start the server
-app.listen(process.env.APP_PORT || 3000, () => {
-  console.log(`Fixed-Palladium has been started on port ${process.env.APP_URL} !`);
-});
+const PORT = 3000
+app.listen(PORT, () => {
+	console.log('App running on port', PORT)
+})
